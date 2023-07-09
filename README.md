@@ -129,7 +129,7 @@
 
 <br><br>
 
-## 4) 정상과 핵 유저의 revives시도
+## 4) 정상 유저와 핵 유저의 revives시도
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/554cb30d-758e-407a-b219-ba6bb9ca91d8></h3>
 
 * 핵 유저의 소생 횟수가 정상 유저보다 더 적다.<br>
@@ -156,7 +156,7 @@
 
 <br><br>
 
-## 7) 정상과 핵 유저의 도움 행위 수 (boosts, heals)
+## 7) 정상 유저와 핵 유저의 도움 행위 수 (boosts, heals)
 * <strong>가설: 무기 획득 수 대비 boosts+heals의 아이템 비율이 더 적을 것이다.</strong><br>
 
 * 정상 유저 : 약 1.4604191866466876<br>
@@ -167,7 +167,7 @@
 
 <br><br>
 
-## 8) 정상과 핵 유저의 처치횟수 등수 분포
+## 8) 정상 유저와 핵 유저의 처치횟수 등수 분포
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/75c7e2b1-f96c-45c3-a86c-2763f1bdefce></h3>
 
 * 핵 유저(주황), 정상 유저(파랑)의 분포를 봤을 때, 핵 유저는 상위 등수에 포진하고 있지 않지만, 하위 등수에는 포진하는 경우가 아예 없다.<br>
@@ -195,7 +195,7 @@
 <br><br>
 
 
-## 2) 이상치 유저 특징 분석
+## 2) 핵 유저 특징 분석
 ### 2-A) 데미지 분석
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/b699e069-f8ab-41b1-952c-2a1797f48a90></h3>
 
