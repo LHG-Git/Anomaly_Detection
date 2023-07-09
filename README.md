@@ -108,7 +108,7 @@
 
 <br><br>
 
-## 3) 정상과 핵 유저의 killStreaks 수 (짧은 시간 내에 동시 처치)
+## 3) 정상 유저와 핵 유저의 killStreaks 수 (짧은 시간 내에 동시 처치)
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/3dc60fe6-2d62-4227-89cf-1bdb40aa46fa></h3>
 
 * 핵 유저는 동시 처치가 거의 1에 수렴<br>
