@@ -4,7 +4,7 @@
 </div>
 
 <h4> 💭 Language : Python <br><br>
-     📝 Library : Pandas, Numpy, Matplotlib, QGIS, Scikit-learn, scipy <br><br>
+     📝 Library : Pandas, Numpy, Matplotlib<br><br>
      🛠  Tool : Google Colab <br><br>
      📅 진행기간 : 2022.02.21 ~ 2022.03.06</h4>
      
