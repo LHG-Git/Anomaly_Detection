@@ -119,7 +119,23 @@
 
 <br><br>
 
+## 4) 정상과 핵 유저의 revives시도
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/554cb30d-758e-407a-b219-ba6bb9ca91d8></h3>
 
+* 핵 유저의 소생 횟수가 정상 유저보다 더 적음<br>
+
+<br><br>
+
+## 5) 상관관계 분석
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/23403d7d-6459-43aa-81dd-d28ece21145e></h3>
+
+* 'killStreaks'와 'DBNOs'와의 상관계수 값이 정상 유저가 핵 유저보다 높음<br>
+
+* 어뷰징유저는 헤드샷이 대부분이기 때문<br>
+
+* 수류탄과 같은 기타무기를 사용하지 않고, 총으로만 상대했을 것<br>
+
+<br><br>
 
 
 
