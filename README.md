@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>📝 BattleGround_Anomaly_Detection<br><br>
+  <h1>📝 개인 프로젝트 : BattleGround_Anomaly_Detection<br><br>
   🕹 배틀그라운드 비인가 프로그램 탐지 프로젝트</h1>
 </div>
 
