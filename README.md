@@ -108,6 +108,24 @@
 
 <br><br>
 
+## 3) 정상과 핵 유저의 killStreaks 수 (짧은 시간 내에 동시 처치)
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/3dc60fe6-2d62-4227-89cf-1bdb40aa46fa></h3>
+
+* 핵 유저는 동시 처치가 거의 1에 수렴<br>
+
+* 동시 처치에 대한 평균검정을 한 결과 핵유저가 정상 유저에 비해 killSteaks가 적음<br>
+
+* 핵유저는 짧은 시간안에 여러 명을 죽일 수 없음<br>
+
+<br><br>
+
+
+
+
+
+
+
+
 # 📄 Modeling
 ## 1) 군집화
 <h3 align="center"><img src= https://github.com/LHG-Git/project/assets/100845169/e22674c7-b20e-4298-b8bc-b7b9f2f4583a></h3>
