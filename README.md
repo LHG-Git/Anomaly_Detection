@@ -183,7 +183,7 @@
 # ⭐ 비인가 프로그램 사용자 탐지
 ## 1) Isolate Forest
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/2f282e5f-6369-46d4-b3cc-fbe222bdd89b></h3>
-
+<br><br>
 
 
 ## 2) 이상치 유저 특징 분석
