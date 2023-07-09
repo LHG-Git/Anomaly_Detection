@@ -180,56 +180,66 @@
 
 <br><br>
 
-# 📄 비인가 프로그램 사용자 탐지
+# ⭐ 비인가 프로그램 사용자 탐지
 ## 1) Isolate Forest
 <h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/2f282e5f-6369-46d4-b3cc-fbe222bdd89b></h3>
 
 
-* 최적의 k값 도출을 위해 <strong>실루엣 계수</strong>를 사용<br> 
-* 이때 실루엣 계수 평균만을 고려하지 않았고 figure5를 통해 도출된 인사이트를 함께 고려<br>
-* 그 결과 cluster별 실루엣 계수 평균이 가장 높지는 않지만, 실루엣 계수의 너비가 비교적 균일한 지점에서 <strong>최적의 k(k=6)값을 도출</strong><br><br>
 
-<h3 align="center"><img src= https://github.com/LHG-Git/project/assets/100845169/909e7b1d-0b40-4745-abc5-f3652ef06a84></h3>
+## 2) 이상치 유저 특징 분석
+### 2-A) 데미지 분석
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/b699e069-f8ab-41b1-952c-2a1797f48a90></h3>
 
-* 최적의 K값을 통해 위치별 군집화 결과, figure 5에서 인천 부근의 서해에 위치한 관측치와, 부산 부근의 남해에 위치한 관측치에서 화학적 산소농도 수치가 높게 기록
+* 파란색 분포 : 정상 유저<br>
+
+* 빨간색 분포 : 핵 유저<br>
+
+* 정상 유저 보다 핵 유저가 전체적으로 높은 데미지 분포를 가지고 있다.<br>
+
+<br><br>
+
+### 2-B) 헤드샷 분석
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/1ffbaba3-6a49-4c07-b867-4f4e0bcc8851></h3>
+
+* 핵 유저의 헤드샷 비율이 확연히 더 높은 것을 알 수 있다.<br>
+
+<br><br>
+
+### 2-C) 등수 분석
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/103dc6ba-b42b-4fe1-9cfa-8da09575e7ec></h3>
+
+* 핵 유저들의 최대 예상 점수가 0에 많이 몰려있다.<br>
+
+* 높은 등수가 예상되는 것으로 보아, 이전 게임 기록이 좋았음을 예상할 수 있다.<br>
+
+<br><br>
+
+### 2-D) 거리 분석
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/59b98fb1-a522-47bc-88c9-0620dc68e6db></h3>
+
+* 핵 유저들은 걸어서 이동한 거리가 상대적으로 낮게 분포한다.<br>
+
+<br><br>
+
+# 🌟 결론
+#### 🍳 EDA를 통한 Insight
+>* 핵 유저는 정상 유저보다 파밍을 적게 한다.<br>
+
+>* 총(무기) 파밍만 하기 때문에, 수류탄을 잘 사용하지 않는다. 따라서 동시 처지 횟수가 낮다.<br>
+
+>* 소생, 회복 등 돕는 횟수가 적다.<br>
+
+>* 핵 유저는 처치횟수 등수가 정상 유저에 비해 더 높은 편에 속한다.<br>
+
+>* 정상 유저는 처지 등수가 낮음에도 불구하고 우승을 하는 경우가 종종있다.<br>
+
 <br>
 
-## 2) 모델 성능 지표 선정
-* 성능 지표의 경우 본 프로젝트의 주제 자체가 ‘해양정보를 활용한 해양오염 예측’이기 때문에, 모델의 설명력을 나타내는 R2값 보다 실제 예측 오차의 크기인 MAE가 본 프로젝트와 맞는 지표라고 생각하여, <strong>MAE값을 기준으로 최종 모델을 선정</strong>
-<br>
+#### 🍳 IsolateForest를 통한 결론
+>* 핵 유저들은 짧은 시간 안에 동시처치(Ex: 수류탄과 같은 광역 무기)가 높은 편에 분포한다.<br>
 
-## 3) 최종 모델 선정
-<h3 align="center"><img src= https://github.com/LHG-Git/project/assets/100845169/da4b5525-0513-4615-a954-9778eadeda55></h3>
+>* 핵 유저들은 타유저에 비해 입힌 데미지가 높은 편이다.<br>
 
-* 최종 예측결과 전체 모델에서 훈련세트에 <strong>약간의 과적합 존재</strong><br>
-* <strong>CatBoost모델의 MAE값이 가장 준수</strong>
-* 해양오염 예측에 사용될 모델을 <strong>CatBoostRegressor로 선정</strong>
-<br>
+>* 핵 유저들은 헤드샷 비율이 높다.<br>
 
-## 4) 하이퍼파라미터 튜닝
-* CatBoostRegressor모델의 특성상 하이퍼파라미터 튜닝을 진행하여도 모델 성능 개선에 크게 영향을 미치지 않음
-* 오히려 파라미터의 default값으로 모델 예측을 수행하였을 때, 성능이 가장 높게 측정됨
-<br>
-
-## 5) K-Fold 교차검증
-* 최종 선정된 모델(CatBoostRegressor)의 경우 train과 text의 성능 지표에서 약간의 과적합이 발생
-* 과적합을 방지하기 위해 valid data를 생성
-* 해당 데이터셋을 이용하여 가장 흔하게 사용되는 <strong>K-Fold 교차검증을 진행</strong>
-* <strong>K값은 5로 지정</strong>하였으며, 모델 진행시에 골고루 데이터의 특성을 반영하기 위하여 <strong>shuffle을 진행</strong>
-<br>
-
-## 6) 모델평가 및 검증
-<h3 align="center"><img src= https://github.com/LHG-Git/project/assets/100845169/1f3ca8e2-9710-404d-9425-d9a9d3f64cdf></h3>
-
-* <strong>하이퍼파라미터 튜닝 및 K-Fold교차검증을 통하여 모델 성능 최적화를 진행하여 과적합 개선</strong>
-
-* 그 결과 이전의 결과에서 보다 <strong>과적합이 많이 개선</strong>되었음을 확인하였고 <strong>모델의 성능 또한 향상됨</strong>
-
-* 성능 지표의 경우 본 프로젝트의 주제가 ‘해양정보를 활용한 해양오염 예측’ 이기 때문에, 모델의 설명력을 나타내는 R2값 보다 실제 예측 오차의 크기인 MAE가 본 프로젝트와 맞는 지표라고 판단
-
-* <strong>최종 모델링 결과 약 MAE = 0.076으로 실제값과 약 0.076이 차이가 나는 모델 완성</strong>
-
-* 최근 10년동안 국내 연안의 화학적 산소농도가 연평균 1.13~1.82mg/L인 것을 고려했을 때, 꽤 정확도가 높은 모델이라고 설명할 수 있음
-
-
-
+>* 핵 유저들은 이동 거리가 짧다.<br>
