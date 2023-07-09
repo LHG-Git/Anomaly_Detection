@@ -180,9 +180,10 @@
 
 <br><br>
 
-# 📄 Modeling
-## 1) 군집화
-<h3 align="center"><img src= https://github.com/LHG-Git/project/assets/100845169/e22674c7-b20e-4298-b8bc-b7b9f2f4583a></h3>
+# 📄 비인가 프로그램 사용자 탐지
+## 1) Isolate Forest
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/2f282e5f-6369-46d4-b3cc-fbe222bdd89b></h3>
+
 
 * 최적의 k값 도출을 위해 <strong>실루엣 계수</strong>를 사용<br> 
 * 이때 실루엣 계수 평균만을 고려하지 않았고 figure5를 통해 도출된 인사이트를 함께 고려<br>
