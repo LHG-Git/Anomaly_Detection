@@ -82,6 +82,27 @@
 > * 이유 : 에임핵을 사용하여 높은 킬 수를 나타내기 때문에 부상을 당하는 일이 적을 것이기 때문이다.
 <br><br>
 
+# 🧾 가설 검증
+### 가설 1, 가설 2
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/05a49fe3-0de8-4880-bcd2-bd5e72d62976></h3>
+
+* <strong>핵 유저의 헤드샷 비율이 정상 유저보다 확연히 더 높은것을 알 수 있다.</strong><br>
+<br>
+### 가설 3
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/80cb58e5-916a-4521-bac8-ad037e08f049></h3>
+
+* 무기획득에 대한 평균 검정을 한 결과 p값이 0.05보다 작아 통계적으로 유의한 차이가 있다.<br>
+* 가설대로 핵 유저의 무기획득의 평균 수가 적음을 확인하였다.<br>
+* 따라서 핵 유저는 파밍을 많이 하지 않는다.<br>
+<br>
+### 가설 4
+<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/80cb58e5-916a-4521-bac8-ad037e08f049></h3>
+* 도움 행위 수에 대한 평균 검정을 한 결과 p값이 0.05보다 작아 통계적으로 유의한 차이가 있다.<br>
+* 가설대로 핵 유저의 무기 획득 수 대비 boosts+heals의 아이템 비율이 적음을 확인하였다.<br>
+* 따라서 핵 유저는 도움 행위을 많이 하지 않는다.<br>
+
+<br><br>
+
 # 🔎 데이터 수집
 |데이터셋|출처|
 |------|:------:|
