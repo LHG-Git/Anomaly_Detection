@@ -17,7 +17,7 @@
 </tbody>
 </table>
 <br>
-<h3 align="center"><img src="https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/0c8294de-98a5-49e1-a1a3-b94375e3136d" height = 600px></h3>
+<h3 align="center"><img src="https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/a4ba4464-f8e5-4bae-8120-5de5a746e3c5" height = 600px></h3>
 
 
 # 🔊 프로젝트 개요
