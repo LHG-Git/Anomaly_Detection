@@ -84,7 +84,7 @@
 <br><br>
 
 # 🔎 가설 설정
-* <span backgroundColor = "gray">winPlacePerc = 1은 우승을 의미</span>
+* <span background-Color = "gray">winPlacePerc = 1은 우승을 의미</span>
 
 * 보통 핵을 쓰는 유저가 게임에서 우승한다고 생각했기 때문에 우승 유저 가운데 aim_point가 이상치인 경우를 비인가 프로그램 사용 유저라고 정의
 
