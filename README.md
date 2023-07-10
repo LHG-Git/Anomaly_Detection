@@ -84,14 +84,10 @@
 
 # 🧾 가설 검증
 ### 1) 가설 1, 가설 2
-<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/05a49fe3-0de8-4880-bcd2-bd5e72d62976></h3>
-
 * <strong>핵 유저의 헤드샷 비율이 정상 유저보다 확연히 더 높은것을 알 수 있다.</strong><br>
 <br>
 
 ### 2) 가설 3
-<h3 align="center"><img src= https://github.com/LHG-Git/BattleGround_Anomaly_Detection/assets/100845169/80cb58e5-916a-4521-bac8-ad037e08f049></h3>
-
 * 무기획득에 대한 평균 검정을 한 결과 p값이 0.05보다 작아 통계적으로 유의한 차이가 있다.<br>
 * 가설대로 핵 유저의 무기획득의 평균 수가 적음을 확인하였다.<br>
 * 따라서 핵 유저는 파밍을 많이 하지 않는다.<br>
