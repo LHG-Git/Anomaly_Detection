@@ -95,7 +95,7 @@
 * 보통 'AWM', 'K98' 등 저격총을 이용해서 헤드샷 킬이 잘 나오긴 하지만, 그것마저 흔한 킬이 아니라고 생각했기 때문에, 위의 비율을 봤을때 비정상적으로 헤드샷 킬이 크다면 에임핵을 의심할 수 있음
 <br><br>
 
-<img src="https://img.shields.io/badge/이름-색상코드?style=flat-square&logo=로고명&logoColor=로고색"/>
+<img src="https://img.shields.io/badge/가설1-#FFCA28?style=flat-square"/>
 
 # 📊 EDA (탐색적 데이터 분석)
 ## 1) 정상 유저와 핵 유저의 플레이 타입
