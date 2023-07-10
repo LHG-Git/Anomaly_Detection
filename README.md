@@ -105,9 +105,9 @@
 # 🔎 데이터 수집
 |데이터 수집 방법|
 |------|
-|1) 게임사에서 제공하는 PUBG Open API를 이용하여 데이터를 json 형식으로 추출|
-|2) json 형식으로 받은 데이터는 pandas dataframe으로 변환|
-|3) csv 파일로 저장|
+|1.PUBG Open API를 이용하여 데이터를 json 형식으로 추출|
+|2.json 형식으로 받은 데이터는 pandas dataframe으로 변환|
+|3.csv 파일로 저장|
 
 <br><br>
 
